@@ -4,17 +4,14 @@ import "fmt"
 
 const x string = "Changes Never Come..."
 
-/*
 func constTest() {
-	const x string = "Changes Never Come..."
-	fmt.Println(x)
-	x = "Changes?"
+	x := "Changes?"
 	fmt.Println(x)
 }
-*/
 
 func main() {
+        constTest()
 	fmt.Println(x)
-	x :=  "Changes?"
+	x := "Changes?"
 	fmt.Println(x)
 }

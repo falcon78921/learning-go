@@ -5,11 +5,8 @@ import "fmt"
 
 // ShareWith will take a name input (string) and return another string based on the name
 func ShareWith(name string) string {
-    if name == "Alice" {
-            return "One for Alice, one for me."
-    } else if name == "" {
-            return "One for you, one for me."
+    if name == "" {
+          name = "you"
     }
-
     return fmt.Sprintf("One for %s, one for me.", name)
 }
